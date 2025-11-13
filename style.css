@@ -89,8 +89,7 @@ nav ul li a {
 
 /* --- Hero Section --- */
 .hero {
-    /* Use the generated image as background */
-    background: url('images/perri7-abstract-header.png') no-repeat center center/cover;
+    background: url('Images/perri7-abstract-header.jpeg') no-repeat center center/cover;
     height: 500px; /* Set a height to show the background image */
     display: flex;
     align-items: center;
@@ -158,6 +157,28 @@ nav ul li a {
 .secondary-cta:hover {
     background-color: var(--color-text-light);
     color: var(--color-background-dark);
+}
+
+/* --- About Page Layout --- */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.about-text,
+.about-image {
+    flex: 1 1 300px;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.15);
 }
 
 /* --- Value Proposition Section --- */
@@ -270,6 +291,14 @@ footer {
     }
     .prop-grid {
         flex-direction: column;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-photo {
+        max-width: 100%;
     }
     .footer-content {
         flex-direction: column;
